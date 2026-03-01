@@ -1,8 +1,24 @@
 {
-  "generated_at": "2026-03-01T03:30:24.009729+00:00",
-  "total": 1,
+  "generated_at": "2026-03-01T03:49:46.991143+00:00",
+  "total": 2,
   "skipped": 0,
   "documents": [
+    {
+      "id": "agents/test-skill-validation",
+      "title": "gh-research Skill: End-to-End Validation",
+      "date": "2026-03-01",
+      "category": "agents",
+      "tags": [
+        "openclaw",
+        "github",
+        "skill",
+        "automation"
+      ],
+      "status": "published",
+      "author": "linda",
+      "path": "docs/agents/test-skill-validation.md",
+      "embeddings_ready": true
+    },
     {
       "id": "benchmarks/qwen3-coder-next-fp8-dgx",
       "title": "Qwen3-Coder-Next-FP8 on DGX Spark: Inference Benchmark",
