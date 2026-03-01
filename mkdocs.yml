@@ -38,8 +38,7 @@ theme:
 
 plugins:
   - search
-  - tags:
-      tags_file: tags.md
+  - tags
 
 markdown_extensions:
   - admonition
@@ -63,13 +62,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/sliuuu/linda-research
 
-nav:
-  - Home: index.md
-  - Tags: tags.md
-  - LLM Infra: llm-infra/index.md
-  - SRE: sre/index.md
-  - Agents: agents/index.md
-  - Benchmarks: benchmarks/index.md
-  - Security: security/index.md
-  - Publishing: publishing/index.md
-  - Weekly Digest: weekly-digest/index.md
+# nav is intentionally omitted — MkDocs auto-discovers all docs/ files.
+# Linda adds files to docs/<category>/ and they appear automatically.
+# Use docs/<category>/index.md as the section landing page (navigation.indexes).
