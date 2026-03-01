@@ -26,14 +26,11 @@ jobs:
       - name: Build index.json
         run: python scripts/build-index.py
 
-      - name: Check index.json is up to date
-        run: |
-          if ! git diff --quiet data/index.json; then
-            echo "❌ data/index.json is out of date. Run 'python scripts/build-index.py' and commit the result."
-            git diff data/index.json
-            exit 1
-          fi
-          echo "✅ data/index.json is up to date"
+      - name: Upload index.json as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-index
+          path: data/index.json
 
       - name: Build MkDocs
         run: mkdocs build --strict
